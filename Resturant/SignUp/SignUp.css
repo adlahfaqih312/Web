@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: 	#f1e3b5;
+    background: linear-gradient(-10deg,#f1e3b5,#5c2111);
+}
+.trans{
+    width: 1050px;
+    height: 720px;
+    box-shadow: inset 20px 20px 20px rgba(167, 114, 125, 0.07),
+    25px 35px 20px rgba(0, 0, 0, 0.1),
+    25px 30px 30px rgba(0, 0, 0, 0.1),
+    inset -20px -20px 25px #f1e3b5;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:100px;
+}
+.trans:hover{
+    width: 1100px;
+    border-radius:150px;
+    transition: 2s;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .drop{
+    position: relative;
+    width: 450px;
+    height: 400px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px #f1e3b5;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:100px ;
+}
+.container .drop:hover{
+    border-radius: 120px;
+}
+
+.container .drop .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+.container .drop .content h2{
+    position: relative;
+    color: 	#f1e3b5;
+    font-size: 1.5em;
+}
+.container .drop .content form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container .drop .content form .inputBox{
+    position: relative;
+    width: 225px;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px #f1e3b5,
+    15px 15px 10px rgba(0, 0, 0, 0.05),
+    15px 10px 15px rgba(0, 0, 0, 0.025);
+    border-radius: 25px;
+}
+.container .drop .content form .inputBox::before{
+    
+}
+.container .drop .content form .inputBox input{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+.container .drop .content form .inputBox input[type="submit"]{
+    color: 	#f1e3b5;
+    font-size: 1.5em;
+    cursor: pointer;
+    letter-spacing: .1em;
+    font-weight: 500;
+}
+.container .drop .content form .inputBox:last-child{
+    width: 120px;
+    background: #5c2111;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px #f1e3b5,
+    15px 15px 10px rgba(0, 0, 0, 0.05),
+    15px 10px 15px rgba(0, 0, 0, 0.025);
+    transition: .5s;
+}
+.container .drop .content form .inputBox:last-child:hover{
+width: 180px;
+}
+.btns{
+    position: absolute;
+    right: -200px;
+    bottom: 0;
+    width: 130px;
+    height: 130px;
+    background: #5c2111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: 	#f1e3b5;
+    line-height: 1.2em;
+    letter-spacing: .1em;
+    font-size: .8em;
+    transition: .25s;
+    box-shadow: inset 10px 10px 10px rgba(248, 25, 140, 0.05),
+    25px 35px 20px #5c2111,
+    25px 30px 30px #5c2111,
+    inset -20px -20px 25px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+.btns:hover{
+    border-radius: 30px;   
+}
+
+.btns.signup{
+    width: 80px;
+    height:80px;
+    bottom: 150px;
+    right: -140px;
+    border-radius: 20px;
+}
+.btns.signup:hover{
+    border-radius: 30px;   
+}
+.btns.s{
+    width: 120px;
+    height:100px;
+    bottom: 260px;
+    right: -100px;
+    border-radius: 20px;
+}
+.btns.s:hover{
+    border-radius: 30px; 
+}
+h1{
+    position: absolute;
+    left: -60%;
+    bottom: 60%;
+    font-size: 4.5em;
+    filter: drop-shadow(50px 10px 10px #5c2111);
+    color: 	#f1e3b5;
+    border-radius: 30%;
+    background: transparent;
+}
+
+img{
+    position: absolute;
+    width: 500px;
+    margin-bottom: -20%;
+    margin-right: 700px;
+    filter:drop-shadow(5px 5px 5px rgba(255,0,0,0.1));
+}
+img:hover{
+    transform: rotate3d(10, 20, 1, 20deg);
+}
